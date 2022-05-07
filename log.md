@@ -1,5 +1,8 @@
 # passos seguidos no nlw returns
 
+Lembrete: para preview de md usar: ctrl+shift+v 
+ou "ctrl+k v"
+
 ## Aula 1
 1. Instalar o Node mais recente
 2. Rodar o comando: *npm create vite@latest*
@@ -25,6 +28,33 @@
 
 13. Após concluir o componente o Diego passou a questão da acessibilidade. Mostrou 3 bibliotecas de acessibilidade: ariakit, radix e a headlessui que foi instalada com *npm install @headlessui/react* porque é do pessoal da tailwind então já fica compatível com tailwind.
 
-14. O widget foi refatorado usando popover e a aula concluída.
+14. O widget foi refatorado usando *popover* e a aula concluída.
 
 15. Agora vou commitar na dev e mergear pra master e por fim vou adicionar o repo ao github.
+
+
+## Aula 2
+
+1. Começamos criando o WidgetForm.tsx e implementamos responsividade com tailwind usando w-[calc(100vw-2rem)] para telas mobile e md:w-auto para telas medias-md ou larges-lg dentro do WidgetForm
+2. Inserimos o componente WidgetForm no componente Widget
+
+3. Construímos o header, footer e botão de fechar do widget, sendo o botão de fechar como CloseButton.tsx, um componente separado, já que seria reutilizado.
+
+4. Após concluir o botão fomos a parte de construir o conteúdo dos tipos de feedback do widget form.
+
+5. Construímos os cardzinhos de opções em objeto javascript. importamos as imagens em svg para assets
+
+6. Para chamar os objetos utilizamos *{ Object.entries(feedbackTypes) }* que monta e retorna uma estrutura da seguinte forma: 
+
+
+`[
+    [['BUG'], {...}],
+    [['IDEA'], {...}],
+    [['THOUGHT'], {...}],
+]`
+
+7. Com a criação desses vetores eu consigo percorrê-los com Map. assim montamos 3 cards com 1 bloco de código
+
+8. Começamos a construir os estados dos botões e a condicional para selecionar o botão.
+
+9. Começamos o conteúdo do feedback em si, quebrando em módulos e pasta.

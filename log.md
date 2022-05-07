@@ -58,3 +58,27 @@ ou "ctrl+k v"
 8. Começamos a construir os estados dos botões e a condicional para selecionar o botão.
 
 9. Começamos o conteúdo do feedback em si, quebrando em módulos e pasta.
+
+
+### aula 3 - criando backend
+
+1. ajustei as pastas do projeto para ficarem todas no mesmo git
+
+2. commitei todas as branchs pro github
+
+3. Criar a pasta server para o backend
+3.1 dentro dela no terminal rodar o comando *npm init -y* para criar o package.json
+3.2 instalar dependencias de type script e ts-node-dev pra que as alteracoes acontecam em tempo real, para fazer tudo instalar com *npm i typescript @types/node ts-node-dev -D* seguido do *npx tsc --init* para criar o arquivo tsconfig.json com as configurações para o typescript com o js 
+
+4. configurando tsconfig.json alteramos versao do javascript no "target": "es2016" para "target": "es2020". E adicionamos "rootDir": "./src", "outDir": "./dist"
+4.1 com o comando *npx tsc* ele mesmo cria a pasta dist já com o arquivo server.js dentro mostrando a conversão do ts pro js.
+
+5. Montamos o script dev em package.json com a linha *"dev": "ts-node-dev src/server/ts"*
+
+6. Instalar o express pra montar as rotas com *npm i express* porém o express não trabalha nativamente com o typescript, então precisamos instalar uma biblioteca adicional como dependencia de desenvolvimento com *npm i -D @types/express*
+
+7. A partir dai criamos a aplicação, colocando no ar e testando a primeira rota /users com "curl http://localhost:3333/users"
+no gitbash
+
+8. passamos então a avaliar o prisma, que é um ORM para falar com o banco de dados. Como um JPA no caso do java. A vantagem disso é que durante o desenvolvimento vamos usar sqlite, porém no momento do deploy podemos alterar o banco para postgree sem impactar na aplicação
+Decidi fazer um commit nesse ponto como forma de backup do estado atual da aplicação

@@ -101,3 +101,7 @@ ou "ctrl+k v"
   ao invés da classe buscar as dependencias que ela precisa, o contexto sinaliza pra elas as dependencias que ela necessita.
 
 16. criamos o routes.ts para começar aplicar o solid e fizemos os ajustes em app.post para routes.post
+
+17. começamos a implementar no repository o contrato no feedbacks repository onde diz pra minha aplicação nas rotas e casos de uso, quais operações podemos implementar no banco de dados. Mas sem implementá-las, separando a implementação da operação. Isso permite trocar o prisma repository por qualquer outra implementação, como typeORM, sequelize entre outros. E tendo o contrato basta ter outra implementação que implemente todos os métodos deste contrato e a aplicação vai continuar funcionando normalmente.
+
+18. aplicamos as inversões de dependencia nas funcoes do banco de dados e envio de email. vou fazer um commit nesse ponto, mandar tudo pra main e abrir uma branch test para começar a parte de teste unitario.

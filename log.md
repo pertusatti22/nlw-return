@@ -105,3 +105,5 @@ ou "ctrl+k v"
 17. começamos a implementar no repository o contrato no feedbacks repository onde diz pra minha aplicação nas rotas e casos de uso, quais operações podemos implementar no banco de dados. Mas sem implementá-las, separando a implementação da operação. Isso permite trocar o prisma repository por qualquer outra implementação, como typeORM, sequelize entre outros. E tendo o contrato basta ter outra implementação que implemente todos os métodos deste contrato e a aplicação vai continuar funcionando normalmente.
 
 18. aplicamos as inversões de dependencia nas funcoes do banco de dados e envio de email. vou fazer um commit nesse ponto, mandar tudo pra main e abrir uma branch test para começar a parte de teste unitario.
+
+19. Tive um baita problema, não consigo mais alterar entre as branchs devido a parte do banco de dados, vou ter que seguir nessa branch mesmo pra parte do teste e aguardar pra ver se nas próximas aulas vai ensinar o deploy

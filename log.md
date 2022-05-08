@@ -107,3 +107,13 @@ ou "ctrl+k v"
 18. aplicamos as inversões de dependencia nas funcoes do banco de dados e envio de email. vou fazer um commit nesse ponto, mandar tudo pra main e abrir uma branch test para começar a parte de teste unitario.
 
 19. Tive um baita problema, não consigo mais alterar entre as branchs devido a parte do banco de dados, vou ter que seguir nessa branch mesmo pra parte do teste e aguardar pra ver se nas próximas aulas vai ensinar o deploy
+
+20. Ótimo, fazendo a pull do github consegui atualizar a main local e criar a nova branch test.
+
+21. Testes utilizando jest. Instalamos jest e o swc pra compilar com _npm i -D jest ts-node @swc/jest_ seguido de _npx jest --init_
+    lembrar tbm de instalar as tipagens com _npm i @types/jest -D_
+
+22. A partir dai criamos o teste unitário
+
+23. pra finalizar instalamos algumas bibliotecas ja pensando na integração do front com o backend com _npm i cors_ e _npm i @types/cors -D_
+    é uma biblioteca de segurança que vai definir quais aplicações frontend podem consumir no nosso backend, quais rotas de frontend podem consumir nosso backend

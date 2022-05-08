@@ -117,3 +117,7 @@ ou "ctrl+k v"
 
 23. pra finalizar instalamos algumas bibliotecas ja pensando na integração do front com o backend com _npm i cors_ e _npm i @types/cors -D_
     é uma biblioteca de segurança que vai definir quais aplicações frontend podem consumir no nosso backend, quais rotas de frontend podem consumir nosso backend
+
+### Aula 4
+
+1. Instalar ambiente REACT NATIVE para desenvolver app mobile, começando com _npm install -g expo-cli_ e confirmar com _expo --version_

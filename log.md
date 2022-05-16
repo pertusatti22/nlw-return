@@ -107,3 +107,21 @@ ou "ctrl+k v"
 18. aplicamos as inversões de dependencia nas funcoes do banco de dados e envio de email. vou fazer um commit nesse ponto, mandar tudo pra main e abrir uma branch test para começar a parte de teste unitario.
 
 19. Tive um baita problema, não consigo mais alterar entre as branchs devido a parte do banco de dados, vou ter que seguir nessa branch mesmo pra parte do teste e aguardar pra ver se nas próximas aulas vai ensinar o deploy
+
+20. Ótimo, fazendo a pull do github consegui atualizar a main local e criar a nova branch test.
+
+21. Testes utilizando jest. Instalamos jest e o swc pra compilar com _npm i -D jest ts-node @swc/jest_ seguido de _npx jest --init_
+    lembrar tbm de instalar as tipagens com _npm i @types/jest -D_
+
+22. A partir dai criamos o teste unitário
+
+23. pra finalizar instalamos algumas bibliotecas ja pensando na integração do front com o backend com _npm i cors_ e _npm i @types/cors -D_
+    é uma biblioteca de segurança que vai definir quais aplicações frontend podem consumir no nosso backend, quais rotas de frontend podem consumir nosso backend
+
+### Aula 4
+
+1. Instalar ambiente REACT NATIVE para desenvolver app mobile, começando com _npm install -g expo-cli_ e confirmar com _expo --version_
+
+2. mandar um _expo init mobile_ para criar o modelo inicial da aplicacao dentro de uma pasta mobile
+
+3. adicionamos arquivos prontos de suporte para começar e executamos a app, o prof falou pra executar com expo start, porém no meu só funcionou no celular quando usei _expo start --tunnel_ carregando no celular ja deu pra colocar um helloworld no app.tsx

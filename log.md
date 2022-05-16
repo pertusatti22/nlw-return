@@ -121,3 +121,7 @@ ou "ctrl+k v"
 ### Aula 4
 
 1. Instalar ambiente REACT NATIVE para desenvolver app mobile, começando com _npm install -g expo-cli_ e confirmar com _expo --version_
+
+2. mandar um _expo init mobile_ para criar o modelo inicial da aplicacao dentro de uma pasta mobile
+
+3. adicionamos arquivos prontos de suporte para começar e executamos a app, o prof falou pra executar com expo start, porém no meu só funcionou no celular quando usei _expo start --tunnel_ carregando no celular ja deu pra colocar um helloworld no app.tsx
